@@ -1,0 +1,1 @@
+This is a basic game created by HTML and JAVASCRIPT.

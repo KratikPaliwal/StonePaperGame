@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Rock Paper Scissors</p>
+    </div>
+    <div>
+        <button onclick="
+        move();
+        let result='';
+        if(computer_move==='rock'){
+            result='tie';
+            
+        }
+        else if(computer_move==='paper'){
+            result=' You Lose';
+        }
+        else if(computer_move=='scissors'){
+            result = ' You Win';
+        }
+        alert(`You picked up rock. Computer picked ${computer_move}. ${result}. `);
+        ">Rock👊</button>
+        <button onclick="
+        move();
+        let result='';
+        if(computer_move==='paper'){
+            result='tie';
+            
+        }
+        else if(computer_move==='scissors'){
+            result=' You Lose';
+        }
+        else if(computer_move==='rock'){
+            result = ' You Win';
+        }
+        alert(`You picked up Paper. Computer picked ${computer_move}. ${result}. `);
+        ">Paper✋</button>
+        <button onclick="
+        move();
+        let result='';
+        if(computer_move==='scissors'){
+            result='tie';
+            
+        }
+        else if(computer_move==='rock'){
+            result=' You Lose';
+        }
+        else if(computer_move==='paper'){
+            result = ' You Win';
+        }
+        alert(`You picked up Scissors. Computer picked ${computer_move}. ${result}. `);s">Scissors✌</button>
+    </div>
+</body>
+<script>
+    let computer_move='';
+    function move(){
+        let var1=Math.random()*100;
+        if(var1>0&&var1<=33){
+            computer_move='rock';
+        }
+        else if(var1>33&&var1<=66){
+            computer_move='paper';
+        }
+        else if(var1>66&&var1<=100){
+            computer_move='scissors';
+        }
+    }
+</script>
+</html>
